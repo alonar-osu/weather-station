@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+    {% block app_content %}
+
+
+
+    <div class="jumbotron">
+        <div class="container">
+            <h4><center> Temperature: {{weathervals['temp']}} deg F</center></h4>
+            <h4><center>Humidity: {{weathervals['humid']}} % </center></h4>
+            <center><img src="/chart.png" class="img-responsive" alt="temp chart"></center>
+
+            <h4><center><b>Active Alerts:</h4></b></center>
+            <h4><center>{{weathervals['alarm']}}</h4></center>
+
+           <center><img src={{url_for('show_image', filename="picture.jpg")}} class="img-responsive"></center>
+        </div?
+    </div>
+    {%endblock %}
+

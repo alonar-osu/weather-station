@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+    {% block app_content %}
+    <h2><center> Temperature: {{weathervals['temp']}} deg F</center></h2>
+    <h2><center>Humidity: {{weathervals['humid']}} % </center></h2>
+    <h2><center>Rain: {{weathervals['rain']}} mm</center></h2>
+    <center><img src="/chart.png" alt="my chart"></center>
+
+    <h2><center>Alert: {{weathervals['alarm']}}</center></h2>
+    <img src="/home/pi/rpiServer/uploadedfiles/picture.jpg">
+    {%endblock %}
+
